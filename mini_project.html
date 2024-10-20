@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editkaro.in Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #282828;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff9800;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .video-category {
+            margin-bottom: 40px;
+        }
+
+        .video-category h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ff9800;
+            padding-bottom: 5px;
+        }
+
+        .video-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .video-item {
+            flex: 1 1 calc(33% - 15px);
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .video-item:hover {
+            transform: translateY(-5px);
+        }
+
+        iframe {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background-color: #282828;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Contact Section Styles */
+        .contact-section {
+            margin-top: 40px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-section h2 {
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ff9800;
+            padding-bottom: 5px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .video-item {
+                flex: 1 1 calc(50% - 15px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .video-item {
+                flex: 1 1 100%;
+            }
+
+            header h1 {
+                font-size: 18px;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Editkaro.in Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#short-videos">Short Videos</a></li>
+                <li><a href="#long-videos">Long Videos</a></li>
+                <li><a href="#gaming">Gaming</a></li>
+                <li><a href="#ads">Ads</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Short Videos Section -->
+        <section id="short-videos" class="video-category">
+            <h2>Short Videos</h2>
+            <div class="video-grid">
+                <div class="video-item">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/hY4pybwOUq0?si=OEYaSKds31jGCteJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Short Video 1</p>
+                </div>
+                <div class="video-item">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/P4FOzpBtPWk?si=uOz9UaPcfSCm9Mh2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Short Video 2</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Long Videos Section -->
+        <section id="long-videos" class="video-category">
+            <h2>Long Videos (Max 2 min)</h2>
+            <div class="video-grid">
+                <div class="video-item">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/_PB4MH2bGy4?si=e7j6qF80gvFwoqVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Long Video 1</p>
+                </div>
+                <div class="video-item">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/jYqH0P4BwvI?si=NHDD5zTQgbXMoehf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Long Video 2</p>
+                </div>
+               
+            </div>
+        </section>
+
+        <!-- Gaming Section -->
+        <section id="gaming" class="video-category">
+            <h2>Gaming Videos</h2>
+            <div class="video-grid">
+                <div class="video-item">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/FH0UtXUnqCY?si=JIcTpUj2i5r3xh46" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Gaming Video 1</p>
+                </div>
+                <div class="video-item">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/DIgBCJZCgAs?si=9YtPOOOnK3XFfZUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Gaming Video 2</p>
+                </div>
+                <div class="video-item">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/RcEWDHXTqwk?si=PwIN1sYYvTnXronv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Gaming Video 3</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ads Section -->
+        <section id="ads" class="video-category">
+            <h2>Ads</h2>
+            <div class="video-grid">
+                <div class="video-item">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/XtXJSX71hhg?si=0zcM4iJy1K6aH48X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Ad 1</p>
+                </div>
+                <div class="video-item">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/bRRdkoaJhAM?si=-DcPIsq5d0hI_lxa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Ad 2</p>
+                </div>
+                <div class="video-item">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/ZNRSHr3b4uA?si=dBnB7IDGi9LKofNy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Ad 3</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <div class="contact-details">
+                <p><strong>Email:</strong> <a href="mailto:info@editkaro.in">info@editkaro.in</a></p>
+                <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+                <p><strong>Address:</strong> 123 Creative Avenue, Media City, CA 90210</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Editkaro.in. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
